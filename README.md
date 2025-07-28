@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Luckson Tour Website
 
 This is the official website for **Luckson Tour**, a travel and consultancy brand.
@@ -20,4 +20,3 @@ This is the official website for **Luckson Tour**, a travel and consultancy bran
 =======
 # luckson-tour-site
 Official website for Luckson Tour and travel agency
->>>>>>> 1e1dc4c8c004680ea0e729a9ae23e21bdf1fad59
