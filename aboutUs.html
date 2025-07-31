@@ -1,17 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Luckson Tour and Travel</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    AOS.init();
+  });
+</script>
+
 </head>
-<body>
-    About Us
-    <p>Welcome to LUCKSON TOUR AND TRAVEL! We are dedicated to providing you with unforgettable travel experiences.</p>
-    <p>Our mission is to explore new destinations, cultures, and adventures while offering personalized travel packages to suit your needs.</p>
-    <p>Whether you're looking for a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour, we have the perfect trip for you.</p>
-    <p>Our team of experienced travel experts is dedicated to providing you with the best service and support throughout your journey.</p>
-    <p>Thank you for choosing LUCKSON TOUR AND TRAVEL! We look forward to serving you again in the future.</p>
-    <p>Contact us today to start planning your next adventure!</p>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="LUCKSON TOUR LOGO">
+            </div>
+            <div class="Home">
+                <a href="luckson.html">Home</a> 
+                <a href="service.html">Our Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="aboutUs.html" class="active">About Us</a> 
+            </div>
+        </nav>
+    </div>
+    <body>
+  <div class="about-container">
+    <section class="intro">
+      <h1>About LUCKSON TOUR AND TRAVEL</h1>
+      <p>At Luckson Tour and Travel, we are passionate about crafting unforgettable experiences. Whether it’s a cultural immersion, thrilling adventure, or a relaxing beach getaway, we tailor every journey to your desires. Since our founding, we’ve helped hundreds explore the beauty of Ethiopia and beyond.</p>
+    </section>
+
+   <section class="ceo-section" data-aos="fade-right">
+  <img src="images/ceo.jpg" alt="CEO of Luckson Tour and Travel">
+  <div class="ceo-text">
+    <h2>Meet Our Founder & CEO</h2>
+    <p><strong>Abenezer Samuel</strong>, the visionary behind Luckson Tour and Travel, started this company with one goal: <em>to help travelers explore the world with passion, purpose, and peace of mind</em>.</p>
+    <p>"Travel should never be just about movement — it should be about meaning, connection, and discovery. That’s what we offer every client who journeys with us."</p>
+
+    <!-- Contact & Comments -->
+    <div class="ceo-contact">
+      <p>
+        <strong>Email the CEO directly:</strong><br>
+        <a href="mailto:ceo@lucksontravel.com" class="email-link">assefhenok33@gmail.com</a>
+      </p>
+
+      <form class="comment-form" action="#" method="POST" onsubmit="return false;">
+        <label for="comment">Leave a message:</label><br>
+        <textarea id="comment" name="comment" rows="4" placeholder="Your message to the CEO..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <section class="locations">
+      <h2>Our Locations</h2>
+      <p>We operate from multiple strategic locations across Ethiopia and partner with agencies in:</p>
+      <ul>
+        <li>Addis Ababa (Head Office)</li>
+        <li>Hawassa</li>
+        <li>Hossana</li>
+        <li>International Partners: Turkey, Dubai, Kenya, South Africa</li>
+      </ul>
+    </section>
+
+    <section class="why-us">
+      <h2>Why Choose Luckson Tour and Travel?</h2>
+      <ul>
+        <li>✅ Personalized travel experiences</li>
+        <li>✅ Friendly, experienced tour guides</li>
+        <li>✅ Hassle-free booking and planning</li>
+        <li>✅ Affordable packages and group deals</li>
+        <li>✅ Commitment to safety and comfort</li>
+      </ul>
+    </section>
+
+    <section class="map-section" data-aos="fade-up">
+  <h2>Find Us at Our Head Office</h2>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.030632901023!2d38.75776077466757!3d9.030105088864543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b6f577acb5%3A0xf8f54c6041786d98!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1690739931740!5m2!1sen!2set"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+    <footer>
+      <p>Follow us: 
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </p>
+      <p>&copy; 2025 Luckson Tour and Travel. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,300 @@
+/* body { 
+    background-image: url('images/client1.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    color: #fff;
+ }  */
+   
+.container img {
+     padding: 10px;
+    border-radius: 50%; /* Circular image */
+    margin-left: 20px;
+    width: 96px; /* Slightly larger */
+    height: 96px;
+    margin-top: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.nav.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    margin-top: -12px;
+    margin-left: -8px;
+    margin-right: -8px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+}
+.Home a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 16px; 
+    transition: color 0.3s, text-decoration 0.3s, background 0.3s; 
+}
+.Home a.active {
+    color: #f51606;
+    border-bottom: 2px solid #f51606;
+    font-weight: bold;
+}
+
+.Home a:hover {
+    color: #f51606;
+    text-decoration: none;
+    transform: translateY(-14px);
+    transition: 0.5s ease;
+    border-radius: 20px;  
+}.Home{
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+    color: #131212;
+    font-size: 25px;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.main .text{
+    display: flex;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff; 
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    margin: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+    background-image: url('images/tour1.jpg');
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    width: 1200px;
+}
+.main h2{
+     display: flex;
+    font-size: 30px;
+    font-family: sans-serif;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    margin: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+
+}
+.text2 p {
+    font-size: 23px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #181818;
+    background: linear-gradient(120deg, #fff 70%, #ffe5e0 100%);
+    border-radius: 24px 24px 32px 32px;
+    box-shadow: 0 10px 40px rgba(245,22,6,0.10), 0 2px 8px rgba(0,0,0,0.10);
+    padding: 32px 44px;
+    margin: 24px auto 36px auto;
+    max-width: 820px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    text-align: left;
+    border-left: 8px solid #f51606;
+    border-right: 3px solid #f51606;
+    border-bottom: 2px solid #f51606;
+    transition: box-shadow 0.3s, background 0.3s, transform 0.2s;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.text2 p::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(120deg, rgba(245,22,6,0.07) 0%, rgba(255,255,255,0.0) 100%);
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 24px 24px 32px 32px;
+}
+.text2 p span.highlight {
+    background: linear-gradient(90deg, #f51606 30%, #ffb199 100%);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(245,22,6,0.10);
+    margin: 0 2px;
+    position: relative;
+    z-index: 2;
+}
+.text2 p:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.10);
+    background: linear-gradient(135deg, #fff 70%, #ffe5e0 100%);
+    transform: translateY(-6px) scale(1.02);
+}
+.main h2 {
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
+    color: #ff5722;
+}
+.main .text {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+    background: linear-gradient(120deg, rgba(245,22,6,0.18) 0%, rgba(0,0,0,0.45) 100%), url('images/tour1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    width: 1000px;
+    max-width: 95vw;
+}
+.text2 p:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+    background: rgba(255,255,255,0.95);
+}
+/* .main .text{ 
+    background-image: url('images/client1.jpg');
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+    width: 1200px;
+ } */
+ 
+.hero-slider {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  background-blend-mode: darken;
+  /* Remove background: rgba(0, 0, 0, 0.5); to prevent overriding the image */
+}
+
+.hero-slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-slider > * {
+  position: relative;
+  z-index: 2;
+}
+.slide-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: #ff5722;
+}
+.slide-text {
+  padding: 30px;
+  border-radius: 15px;
+  font-size: 20px;
+
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  z-index: 100;
+}
+
+.slider-nav.left {
+  left: 20px;
+}
+
+.slider-nav.right {
+  right: 20px;
+}
+
+/* Footer styles */
+.site-footer {
+  background-image: url('images/tour2.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-content div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-content h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 0.9rem;
+}
+

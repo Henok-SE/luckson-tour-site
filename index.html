@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKSON TOUR AND TRAVEL</title>
+    <link rel="stylesheet" href="luckson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="LUCKSON TOUR LOGO">
+            </div>
+            <div class="Home">
+                <a href="luckson.html" class="active">Home</a> 
+                <a href="service.html">Our Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="aboutUs.html">About Us</a> 
+            </div>
+        </nav>
+        <div class="main">
+            
+            <!-- <div class="text"> 
+                <h1>LUCKSON TOUR AND TRAVEL</h1>
+                <p>We are here to make your travel experience unforgettable.
+                 Discover new destinations, cultures, and adventures with luckson tour and travel.
+                We offer personalized travel packages to suit your needs.
+                </p>  </div> -->
+                <section class="hero-slider">
+  <div class="slide-text">
+    <h1>Explore the World with Luckson Tour</h1>
+    <p>Your journey begins here. Discover, dream,cultures and travel with confidence.<br>    
+        Discover new destinations, cultures, and adventures
+                   with LUCKSON TOUR AND TRAVEL. We offer personalized</br>
+                   travel packages to suit your needs.
+                   Whether you're looking for a relaxing beach getaway, 
+                   an adventurous mountain trek, <br> a cultural city tour,
+                  we have the perfect trip for you.</br>
+    </p>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <div class="slider-nav left" onclick="changeSlide(-1)">&#10094;</div>
+  <div class="slider-nav right" onclick="changeSlide(1)">&#10095;</div>
+    <!--<div class="slides">
+        <div class="slide active" style="background-image: url('images/tour1.jpg');"></div>
+        <div class="slide" style="background-image: url('images/tour2.jpg');"></div>
+         <div class="slide" style="background-image: url('images/tour3.jpg');"></div> -->
+
+</section>    
+             <h2>WHY  US ?</h2>
+            <div class="text2">
+               <p>
+                   Discover new destinations, cultures, and adventures 
+                   with LUCKSON TOUR AND TRAVEL. We offer personalized
+                   travel packages to suit your needs.
+                   Whether you're looking for a relaxing beach getaway, 
+                   an adventurous mountain trek, or a cultural city tour,
+                  we have the perfect trip for you.
+                 Our team of experienced travel experts is dedicated to
+                  providing you with the best service and 
+                   support throughout your journey.
+                 Contact us today to start planning your next trip!
+                  Follow us on social media for the latest updates and travel tips.
+                 Thank you for choosing LUCKSON TOUR AND TRAVEL!
+            </p>
+    </div>
+  </div>     
+</div>
+     
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-about">
+      <h4>Luckson Tour & Travel</h4>
+      <p>Your gateway to unforgettable journeys and adventures across the globe. Let us plan your next great escape!</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: info@lucksontour.com</p>
+      <p>Phone: +251-912-345-678</p>
+      <p>Address: Bole, Addis Ababa, Ethiopia</p>
+    </div>
+    <div class="footer-socials">
+      <h4>Follow Us</h4>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Luckson Tour & Travel. All rights reserved.</p>
+  </div>
+</footer>
+
+
+        <script>
+  const backgrounds = [
+    'url(images/tour2.jpg)',
+    'url(images/tour1.jpg)',
+    'url(images/tour5.jpg)'
+  ];
+
+  let current = 0;
+  const slider = document.querySelector('.hero-slider');
+
+  function showSlide(index) {
+    current = (index + backgrounds.length) % backgrounds.length;
+    slider.style.backgroundImage = backgrounds[current];
+  }
+
+  function changeSlide(step) {
+    showSlide(current + step);
+  }
+
+  // Auto change every 5 seconds
+  setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+
+  // Initialize
+  window.onload = () => showSlide(0);
+</script>
+</body>
+</html>

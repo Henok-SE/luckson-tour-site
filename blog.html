@@ -3,39 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Blog</title>
 </head>
-<body>
-    blog
-    <p>Welcome to our blog! Here we share the latest news, travel tips, 
-    and stories from our adventures around the world.   
-    Stay tuned for updates on our latest trips, 
-    travel guides, and insights into different cultures and destinations
-    that we explore. Whether you're a seasoned traveler or planning your first trip,
-    our blog is here to inspire and inform you.
-    We believe that travel is not just about the destination,
-    but also about the journey and the experiences along the way.   
-    Join us as we discover new places, meet new people, and create unforgettable memories.
-    Thank you for following our blog, and we hope you find our content helpful and inspiring!
-    </p>
-    <p>Feel free to reach out to us with any questions or suggestions for future blog
-    posts. We love hearing from our readers and are always looking for ways to improve our content.
-    Happy travels!</p>
-    <p>Follow us on social media for the latest updates and travel tips.
-    Thank you for choosing LUCKSON TOUR AND TRAVEL!</p>
-    <p>Contact us today to start planning your next trip!</p>
-    <p>Explore the world with us!</p>
-    <p>Discover new destinations, cultures, and adventures with LUCKSON TOUR AND TRAVEL.
-    We offer personalized travel packages to suit your needs.
-    Whether you're looking for a relaxing beach getaway, an adventurous mountain trek,
-    or a cultural city tour, we have the perfect trip for you.
-    Our team of experienced travel experts is dedicated to providing you with the best service
-    and support throughout your journey.</p>
-    <p>Thank you for choosing LUCKSON TOUR AND TRAVEL!</p>
-    <p>Follow us on social media for the latest updates and travel tips.</p>    
-    <p>Contact us today to start planning your next trip!</p>
-    <p>Explore the world with us!</p>
-    <p>Discover new destinations, cultures, and adventures with LUCKSON TOUR AND TRAVEL.</p>
+   <script>
+  const searchInput = document.getElementById("searchInput");
+  searchInput.addEventListener("input", function () {
+    const filter = this.value.toLowerCase();
+    const posts = document.querySelectorAll(".blog-post");
+    posts.forEach(post => {
+      const title = post.querySelector("h2").textContent.toLowerCase();
+      post.style.display = title.includes(filter) ? "block" : "none";
+    });
+  });
+</script>
 
+ 
+<body>
+  <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="LUCKSON TOUR LOGO">
+            </div>
+            <div class="Home">
+                <a href="luckson.html">Home</a> 
+                <a href="service.html">Our Services</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="aboutUs.html">About Us</a> 
+            </div>
+        </nav>
+    <header class="blog-header">
+  <h1>Luckson Tour Blog</h1>
+  <p>Your source for travel tips, guides, and success stories.</p>
+</header>
+   <section class="blog-posts">
+  <article class="post">
+    <img src="images/tour2.jpg" alt="Top 10 Places in Ethiopia">
+    <h2><a href="#">Top 10 Places to Visit in Ethiopia in 2025</a></h2>
+    <p>A quick guide on where to go, what to see, and why Ethiopia is a must-visit in 2025.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article>
+
+  <article class="post">
+    <img src="images/tour5.jpg" alt="Visa Tips">
+    <h2><a href="#">How to Get a Tourist Visa for Turkey</a></h2>
+    <p>Step-by-step instructions on visa application, documents required, and common mistakes to avoid.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article> 
+
+  <article class="post">
+    <img src="images/pic4.jpg" alt="Top 10 Places in Ethiopia">
+    <h2><a href="#">Amazing Places to Visit in Canada in 2025</a></h2>
+    <p>A quick guide on where to go, what to see, and why Ethiopia is a must-visit in 2025.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article>
+
+  <article class="post">
+    <img src="images/tour1.jpg" alt="Top 10 Places in Ethiopia">
+    <h2><a href="#"> Visit dubai with us in 2025</a></h2>
+    <p>A quick guide on where to go, what to see, and why Ethiopia is a must-visit in 2025.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article>
+
+  <article class="post">
+    <img src="images/pic2.jpg" alt="Top 10 Places in Ethiopia">
+    <h2><a href="#"> Visit in poland in 2025</a></h2>
+    <p>A quick guide on where to go, what to see, and why Ethiopia is a must-visit in 2025.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article>
+
+  <article class="post">
+    <img src="images/tour7.jpg" alt="Top 10 Places in Ethiopia">
+    <h2><a href="#">Top 10 Places to Visit in Ethiopia in 2025</a></h2>
+    <p>A quick guide on where to go, what to see, and why Ethiopia is a must-visit in 2025.</p>
+    <a href="#" class="read-more">Read More →</a>
+  </article>
+</section>
+<aside class="sidebar">
+  <div class="search-bar">
+    <input type="text" placeholder="Search blog...">
+  </div>
+
+  <div class="categories">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="#">Travel Guides</a></li>
+      <li><a href="#">Visa Tips</a></li>
+      <li><a href="#">Client Stories</a></li>
+    </ul>
+  </div>
+
+  <div class="recent-posts">
+    <h3>Recent Posts</h3>
+    <ul>
+      <li><a href="#">Packing Tips for Long Trips</a></li>
+      <li><a href="#">Client Success: Visa to Canada</a></li>
+    </ul>
+  </div>
+</aside>
+
+<footer class="main-footer">
+  <div class="footer-overlay">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/tour3.png" alt="Luckson Logo">
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      </div>
+
+      <p>&copy; 2025 Luckson Tour and Consultancy. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+   
+  
 </body>
 </html>
