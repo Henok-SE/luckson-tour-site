@@ -170,3 +170,41 @@ h1 {
         transform: translateY(0);
     }
 }
+
+
+
+/* === Mobile Responsive Fixes === */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header, nav, section, footer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, .content, .wrapper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
